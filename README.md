@@ -1,8 +1,7 @@
-# decorator_design_pattern  ![GitHub release](https://img.shields.io/github/release/ajeetx/decorator_design_pattern.svg?style=for-the-badge) ![Maintenance](https://img.shields.io/maintenance/yes/2018.svg?style=for-the-badge)
+# decorator design pattern ![GitHub release](https://img.shields.io/github/release/ajeetx/decorator_design_pattern.svg?style=for-the-badge) ![Maintenance](https://img.shields.io/maintenance/yes/2018.svg?style=for-the-badge)
 
-[![Build status](https://ci.appveyor.com/api/projects/status/524b763u9wt0v70o/branch/master?svg=true)](https://ci.appveyor.com/project/AJEETX/decorator-design-pattern/branch/master) | ![GitHub Release Date](https://img.shields.io/github/release-date/ajeetx/decorator-design-pattern.svg?style=plastic) |
+[![Build status](https://ci.appveyor.com/api/projects/status/524b763u9wt0v70o/branch/master?svg=true)](https://ci.appveyor.com/project/AJEETX/decorator-design-pattern/branch/master) |![GitHub Release Date](https://img.shields.io/github/release-date/ajeetx/decorator_design_pattern.svg)|
 | --- | --- |
-
 
 [![.Net Framework](https://img.shields.io/badge/DotNet-2.0-blue.svg?style=plastic)](https://www.microsoft.com/en-au/download/details.aspx?id=1639) | ![GitHub language count](https://img.shields.io/github/languages/count/ajeetx/e.svg?style=plastic)| ![GitHub top language](https://img.shields.io/github/languages/top/ajeetx/decorator_design_pattern.svg) |![GitHub repo size in bytes](https://img.shields.io/github/repo-size/ajeetx/decorator_design_pattern.svg) 
 | ---          | ---        | ---      | ---        | 
@@ -27,4 +26,3 @@ Having any trouble? Check out our [documentation](https://github.com/AJEETX/deco
 
 [![HitCount](http://hits.dwyl.io/ajeetx/decorator_design_pattern/projects/1.svg)](http://hits.dwyl.io/ajeetx/decorator_design_pattern/projects/1) | ![GitHub contributors](https://img.shields.io/github/contributors/ajeetx/decorator_design_pattern.svg?style=plastic)|![license](https://img.shields.io/github/license/ajeetx/decorator_design_pattern.svg?style=plastic)|
  | --- | --- | ---|
-
