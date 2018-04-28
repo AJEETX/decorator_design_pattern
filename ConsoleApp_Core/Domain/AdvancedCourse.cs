@@ -13,9 +13,9 @@ namespace decorator_design_pattern
             return _course.GetCost() + 4;
         }
 
-        public override string GetName()
+        public override string GetTopics()
         {
-            return _course.GetName() + ", industry-projects";
+            return _course.GetTopics() + ", industry-projects";
         }
     }
 }

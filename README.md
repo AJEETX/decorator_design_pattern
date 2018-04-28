@@ -9,15 +9,75 @@
 ---------------------------------------
 ## Introduction
 
-A very simple Decorator design pattern implementation  
+A very simple Decorator design pattern implementation. The effort is to display the usage of choosing education domain courses.  
 
-The repository consists of a project .net2.0 console application. 
+## Repository codebase
+ 
+The repository consists of a project:
+1) Asp.Net Core2 Console 
 
 ## Features
+The education courses have been created with basic as the minimum .And in order to choose other optional courses at runtime the decorator pattern comes.
 
 - The basic course is minimum bare with min cost and min topics 
+```
+interface ICourse
+{
+   string GetTopics();
+   double GetCost();
+}
+```
+- The decorator is an abstract class which inherits the ICourse interface
+```
+abstract class CourseDecorator : ICourse
+{
+    protected ICourse _course;
+    public CourseDecorator(ICourse course)
+    {
+    	_course= course;
+    }
+    public abstract double GetCost();
+    public abstract string GetTopics();
+}
+```
 - The higher course is basic course plus more topics with more cost
+```
+class HigherCourse : CourseDecorator
+{
+    public HigherCourse(ICourse _course) : base(_course)
+    {
+    	Console.WriteLine("This is bachelor degree course");
+    }
+    public override double GetCost()
+    {
+    	return _course.GetCost() + 2;		
+    }
+
+    public override string GetTopics()
+    {
+    	return _course.GetTopics() + ", real-time projects";
+    }
+}
+```
 - The advanced course is basic plus higher course plus more topics with more cost
+```
+class AdvancedCourse : CourseDecorator
+{
+    public AdvancedCourse(ICourse _course) : base(_course)
+    {
+    	Console.WriteLine("This is master-degree course");
+    }
+    public override double GetCost()
+    {
+    	return _course.GetCost() + 4;			
+    }
+
+    public override string GetTopics()
+    {
+    	return _course.GetTopics() + ", industry-projects";
+    }
+}
+```
 
 ### Support or Contact
 

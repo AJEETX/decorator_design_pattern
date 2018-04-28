@@ -4,7 +4,7 @@ namespace decorator_design_pattern
 {
     interface ICourse
     {
-        string GetName();
+        string GetTopics();
         double GetCost();
     }
     class Course : ICourse
@@ -14,6 +14,6 @@ namespace decorator_design_pattern
             Console.WriteLine("This is Basic school-level course");
         }
         public double GetCost(){return 10;}
-        public string GetName(){return "Basic programming";}
+        public string GetTopics(){return "Basic programming";}
     }
 }

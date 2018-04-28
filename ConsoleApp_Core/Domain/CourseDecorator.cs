@@ -7,14 +7,7 @@
         {
             _course= course;
         }
-        public virtual double GetCost()
-        {
-            return _course.GetCost();
-        }
-
-        public virtual string GetName()
-        {
-            return _course.GetName();
-        }
+        public abstract double GetCost();
+        public abstract string GetTopics();
     }
 }

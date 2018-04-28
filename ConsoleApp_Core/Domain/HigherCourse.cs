@@ -13,9 +13,9 @@ namespace decorator_design_pattern
             return _course.GetCost() + 2;
         }
 
-        public override string GetName()
+        public override string GetTopics()
         {
-            return _course.GetName() + ", real-time projects";
+            return _course.GetTopics() + ", real-time projects";
         }
     }
 }
