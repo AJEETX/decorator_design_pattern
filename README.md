@@ -3,7 +3,7 @@
 ![Travis](https://img.shields.io/travis/AJEETX/decorator_design_pattern.svg) |![GitHub Release Date](https://img.shields.io/github/release-date/ajeetx/decorator_design_pattern.svg)|
 | --- | --- |
 
-[![.Net Framework](https://img.shields.io/badge/DotNet-2.0-blue.svg?style=plastic)](https://www.microsoft.com/en-au/download/details.aspx?id=1639) | ![GitHub language count](https://img.shields.io/github/languages/count/ajeetx/e.svg?style=plastic)| ![GitHub top language](https://img.shields.io/github/languages/top/ajeetx/decorator_design_pattern.svg) |![GitHub repo size in bytes](https://img.shields.io/github/repo-size/ajeetx/decorator_design_pattern.svg) 
+[![.Net Framework](https://img.shields.io/badge/DotNet-2.0-blue.svg?style=plastic)](https://www.microsoft.com/en-au/download/details.aspx?id=1639) | ![GitHub language count](https://img.shields.io/github/languages/count/ajeetx/decorator_design_pattern.svg) | ![GitHub top language](https://img.shields.io/github/languages/top/ajeetx/decorator_design_pattern.svg) |![GitHub repo size in bytes](https://img.shields.io/github/repo-size/ajeetx/decorator_design_pattern.svg) 
 | ---          | ---        | ---      | ---        | 
 
 ---------------------------------------
