@@ -6,7 +6,7 @@ namespace decorator_design_pattern
     {
         public HigherCourse(ICourse _course) : base(_course)
         {
-            Console.WriteLine("This is bachelor degree course");
+            //Console.WriteLine("This is bachelor degree course");
         }
         public override double GetCost()
         {
@@ -15,7 +15,7 @@ namespace decorator_design_pattern
 
         public override string GetTopics()
         {
-            return _course.GetTopics() + ", real-time projects";
+            return _course.GetTopics() + "\n , real-time projects";
         }
     }
 }

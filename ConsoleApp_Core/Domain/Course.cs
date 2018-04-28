@@ -11,7 +11,7 @@ namespace decorator_design_pattern
     {
         public Course()
         {
-            Console.WriteLine("This is Basic school-level course");
+            //Console.WriteLine("This is Basic school-level course");
         }
         public double GetCost(){return 10;}
         public string GetTopics(){return "Basic programming";}
