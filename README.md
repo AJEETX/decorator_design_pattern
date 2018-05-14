@@ -27,6 +27,14 @@ interface ICourse
    double GetCost();
 }
 ```
+- Course is the basic minimum which inherits the ICourse interface
+```
+    class Course : ICourse
+    {
+        public double GetCost(){return 10;}
+        public string GetTopics(){return "Basic programming";}
+    }
+```    
 - The decorator is an abstract class which inherits the ICourse interface
 ```
 abstract class CourseDecorator : ICourse
