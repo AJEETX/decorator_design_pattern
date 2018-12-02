@@ -1,34 +1,40 @@
 # decorator design pattern ![GitHub release](https://img.shields.io/github/release/ajeetx/decorator_design_pattern.svg?style=for-the-badge) ![Maintenance](https://img.shields.io/maintenance/yes/2018.svg?style=for-the-badge)
 
-![Travis](https://img.shields.io/travis/AJEETX/decorator_design_pattern.svg) |![GitHub Release Date](https://img.shields.io/github/release-date/ajeetx/decorator_design_pattern.svg)|
-| --- | --- |
-
-[![.Net Framework](https://img.shields.io/badge/DotNet-2.0-blue.svg?style=plastic)](https://www.microsoft.com/en-au/download/details.aspx?id=1639) | ![GitHub language count](https://img.shields.io/github/languages/count/ajeetx/decorator_design_pattern.svg) | ![GitHub top language](https://img.shields.io/github/languages/top/ajeetx/decorator_design_pattern.svg) |![GitHub repo size in bytes](https://img.shields.io/github/repo-size/ajeetx/decorator_design_pattern.svg) 
-| ---          | ---        | ---      | ---        | 
+![Travis](https://img.shields.io/travis/AJEETX/decorator_design_pattern.svg) |![GitHub Release Date](https://img.shields.io/github/release-date/ajeetx/decorator_design_pattern.svg)| [![.Net Framework](https://img.shields.io/badge/DotNet-2.0-blue.svg?style=plastic)](https://www.microsoft.com/en-au/download/details.aspx?id=1639) | ![GitHub language count](https://img.shields.io/github/languages/count/ajeetx/decorator_design_pattern.svg) | ![GitHub top language](https://img.shields.io/github/languages/top/ajeetx/decorator_design_pattern.svg) |![GitHub repo size in bytes](https://img.shields.io/github/repo-size/ajeetx/decorator_design_pattern.svg) 
+| ---          | ---        | ---      | ---        | --- | --- |
 
 ---------------------------------------
 ## Introduction
 
-A very simple Decorator design pattern implementation. The effort is to display the usage of choosing education domain courses.  
+A very simple Decorator design pattern implementation. 
+
+The effort is to display the design pattern usage in real time.  
 
 ## Repository codebase
  
 The repository consists of a project:
-1) Asp.Net Core2 Console 
+1) .Net Core2 Console 
 
 ## Features
-The education courses have been created with basic as the minimum .And in order to choose other optional courses at runtime the decorator pattern comes.
+Suppose there are 3 types of education courses in a College.
 
-- The basic course is minimum bare with min cost and min topics 
+| Course Name| Course topics | Fee Cost ($) |
+| --- | --- | ---  |
+| Basic  | Basic programming | 100 |
+| Higher  | Basic programming, algorithm | 150 |
+| Advanced  |Basic programming, algorithm, design | 200 |
+
+The education courses have been created with basic as the minimum .
+
+And in order to choose other optional courses at runtime the decorator pattern comes.
+
+- The basic course is minimum bare with $100 fee cost and "Basic programming" topic which implements the ICourse interface
 ```
 interface ICourse
 {
    string GetTopics();
    double GetCost();
 }
-```
-- Course is the basic minimum which inherits the ICourse interface
-```
     class Course : ICourse
     {
         public double GetCost(){return 10;}
@@ -48,7 +54,7 @@ abstract class CourseDecorator : ICourse
     public abstract string GetTopics();
 }
 ```
-- The higher course is basic course plus more topics with more cost
+- The **higher course** = [basic course] + "algorithm" topic with additional fee cost i.e $150
 ```
 class HigherCourse : CourseDecorator
 {
@@ -67,7 +73,7 @@ class HigherCourse : CourseDecorator
     }
 }
 ```
-- The advanced course is basic plus higher course plus more topics with more cost
+- The **advanced course** = [basic course] + [higher course] + "design" topic of with more cost i.e. $200
 ```
 class AdvancedCourse : CourseDecorator
 {
